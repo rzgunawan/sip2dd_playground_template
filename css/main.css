@@ -1,0 +1,565 @@
+@import './_variables.css';
+
+/* css reset */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #505050;
+    overflow-x:hidden;
+    background-color: #E9F8FE;
+}
+
+/* custom css styles */
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+.text-bold{
+    font-weight:bold;
+    color: #404040;
+}
+
+.text-center{
+    text-align:center
+}
+
+.text-primary{
+    color: var(--primaryColor) !important
+}
+
+.text-upper{
+    text-transform:uppercase !important;
+}
+
+.d-block{
+    display:block;
+}
+
+.header{
+    text-align:center;
+    margin-bottom: 2rem;
+}
+
+.section-header{
+    font-size: 25px;
+    font-family: "Mt Semi";
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+}
+
+.header span{
+    font-size: 20px;
+    color: #404040
+}
+
+section{
+    position:relative;
+    padding-top: 5rem;
+}
+
+.btn{
+    display:block;
+    outline:none;
+    border:none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align:center;
+    font-family: "Poppins Medium";
+    font-size: 18px;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background-color: var(--primaryColor);
+    color: #fafafa
+}
+
+.btn-outline-primary{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor) !important;
+}
+
+.btn-transparent{
+    background-color: transparent;
+    color: #404040;
+}
+
+.card{
+    width:100%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.card .card-body{
+    position:relative;
+    width:100%;
+}
+
+.card .card-body .card-title{
+    font-family: "Mt Semi";
+    font-size: 20px;
+    color: #404040;
+}
+
+/* end custom css styles */
+
+/* navbar styles */
+nav#navbar{
+    padding: 35px 0;
+}
+
+nav#navbar .container{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+nav#navbar .brand{
+    font-size: 45px;
+    text-decoration: none;
+    font-family: "Mt Bold";
+    justify-self: start;
+    align-self: end;
+    color: var(--primaryColor);
+    text-transform:uppercase;
+}
+
+nav#navbar ul.nav-ul{
+    list-style-type: none;
+    justify-self: center;
+    align-self: start;
+}
+
+nav#navbar .container .collapse{
+    display:none;
+    width: 35px;
+    justify-self: end;
+    align-self: center;
+    cursor:pointer
+}
+
+nav#navbar .container .collapse .bar{
+    width:100%;
+    height: 5px;
+    background-color: #505050;
+    margin-bottom: 5px;
+}
+
+nav#navbar .collapse-menu{
+    position:relative;
+    display: none;
+    opacity: 0;
+    width:100%;
+    background-color: #E9F8FE;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+    padding: 12px;
+    transition:all 1s;
+}
+
+nav#navbar .collapse-menu.active{
+    display:block;
+    opacity: 1;
+}
+
+nav#navbar .collapse-menu ul{
+    list-style-type: none;
+}
+
+nav#navbar .collapse-menu ul li.nav-item{
+    float:none !important;
+    margin-bottom: 1rem;
+    text-align:center
+}
+
+nav#navbar .collapse-menu ul li.nav-item a.nav-link{
+    text-decoration: none;
+    color: #404040
+}
+
+nav#navbar .collapse-menu ul li.nav-item a.nav-link.btn{
+    width: 25%;
+    margin:0 auto;
+}
+
+nav#navbar .container .collapse .bar:last-child{
+    margin-bottom: 0;
+}
+
+nav#navbar ul.nav-ul li.nav-item{
+    float:left;
+    margin-left: 2rem;
+}
+
+nav#navbar ul.nav-ul li.nav-item a.nav-link{
+    text-decoration:none;
+    color: #404040;
+    font-size: 18px;
+    font-family: "Mt Semi";
+}
+
+nav#navbar ul.nav-ul li.nav-item a.nav-link.btn{
+    margin-top: -.8rem;
+    padding: 10px 32px;
+    border-radius: 25px;
+}
+
+nav#navbar ul.nav-ul li.nav-item a.nav-link.active{
+    color: var(--primaryColor) !important
+}
+/* end navbar styles */
+
+/* header styles */
+header#header{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    padding-top: 3rem;
+}
+
+header#header .container{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header#header .container .left__side, header#header .container .right__side{
+    flex: 48%;
+}
+
+/* left side styles */
+
+header#header .container .left__side span{
+    font-size: 32px;
+    font-family: "Mt Semi";
+    font-weight: 400;
+}
+
+header#header .container .left__side h1.header-title{
+    font-size: 32px;
+    font-family: "Mt Bold";
+    margin-bottom: 1.5rem;
+}
+
+header#header .container .left__side button{
+    width: 180px;
+    padding: 12px 20px;
+    border-radius: 28px;
+    font-weight: 200
+}
+
+header#header .container .left__side p.header-description{
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 200;
+    margin-bottom: 2.5rem;
+}
+
+header#header .container .left__side button{
+    font-size: 20px;
+    font-weight: 200
+}
+
+/* end left side styles */
+
+/* right side styles */
+
+header#header .container .right__side img.img-header{
+    display:block;
+    width: 85%;
+    height: 350px;
+    margin:0 auto;
+}
+
+/* end right side styles */
+
+/* end header styles */
+
+/* feature section */
+section#features{
+    margin-top: -10rem;
+}
+
+section#features .header{
+    margin-bottom: 0;
+}
+
+section#features .content{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+section#features .content .card .card-body img{
+    display:block;
+    width: 70%;
+    height: 220px;
+    margin:0 auto
+}
+
+section#features .content .card{
+    background-color: transparent !important;
+}
+
+section#features .content .card .card-body .card-title{
+    margin-top: -2.5rem;
+    margin-bottom: 1.5rem;
+}
+/* end feature section */
+
+/* unknown section styles */
+section#uk .container{
+    position: relative;
+}
+
+section#uk .container .header{
+    margin-bottom: 3.4rem;
+}
+
+section#uk .container .content, section#news .container .content{
+    position:relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    transition: all 1s;
+}
+
+section#uk .container .content .wrapper:first-child, section#news .container .content .wrapper:first-child{
+    margin-left: 0;
+}
+
+section#uk .container .content .wrapper, section#news .container .content .wrapper{
+    flex:100%;
+    min-width: 100%;
+    margin-left: 10rem;
+    position: relative;
+}
+
+section#uk .container .content .wrapper, section#news .container .content .wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.7rem;
+}
+
+section#uk .container .content .card .card-body{
+    padding: 2.5rem 0;
+}
+
+section#uk .container .content .card .img-wrapper{
+    position: relative;
+    margin:0 auto;
+    width: 60%;
+    height:180px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px 6px rgba(254, 232, 234, .5);
+}
+
+section#uk .container .content .card .img-wrapper img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:120px;
+    height:120px;
+}
+
+section#uk .container .content .card .card-title{
+    margin: 1.5rem 0;
+}
+
+section#uk .container button{
+    margin: 0 auto;
+    margin-top: 3rem !important;
+    width: 180px;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+.dots{
+    margin:0 auto;
+    width: 20%;
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots .dot{
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    opacity: .8;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.dots .dot.active{
+    background-color: var(--primaryColor);
+}
+
+/* end unknown section styles */
+
+/* news section styles */
+section#news .container .content .card{
+    background-color: transparent;
+}
+section#news .container .content .card img{
+    width:100%;
+    height: 270px;
+    margin-bottom: 1rem;
+}
+
+section#news .container .content .card p{
+    margin: 2rem 0;
+    color: #808080
+}
+
+section#news .container .content .card button{
+    width:120px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+    color: #303030;
+}
+/* end news section styles */
+
+/* interest section styles */
+
+section#interest{
+    height: 110vh;
+    padding-top: 8rem;
+}
+section#interest::before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: url('../assets/images/bg_shape1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+section#interest .container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    align-items: start;
+    grid-gap: 3rem;
+}
+
+section#interest .container .left__side h1{
+    font-size: 32px;
+    font-family: "Mt Bold";
+}
+
+section#interest .container .left__side p{
+    margin: 3rem 0;
+}
+
+section#interest .container .left__side .btn-wrapper{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 12px;
+    width:70%;
+}
+
+section#interest .container .left__side .btn-wrapper button{
+    width:100%;
+    border-radius: 5px;
+}
+
+section#interest .container .right__side video{
+    width:85%;
+    height: 320px;
+    margin:0 auto;
+    display: block;
+}
+/* end interest section styles */
+
+/* footer styles */
+footer{
+    margin-top: -12rem;
+    background-color: #fff
+}
+footer#footer .container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer#footer .container .wrapper:first-child{
+    flex: 20%;
+}
+
+footer#footer .container .wrapper{
+    flex: 12%;
+    font-size: 14px;
+}
+
+footer#footer .container .wrapper .header{
+    text-align: left !important ;
+}
+
+footer#footer .container .wrapper h2{
+    font-family: "Mt Semi";
+    margin-bottom: 3rem;
+    font-size: 28px;
+}
+
+footer#footer .container .wrapper h4{
+    margin-bottom: 1.5rem;
+}
+
+footer#footer ul{
+    list-style-type: none;
+}
+
+footer#footer ul.socials li:first-child{
+    margin-left: 0;
+}
+
+footer#footer ul.socials li{
+    float:left !important;
+    margin-left: 2.2rem;
+}
+
+footer#footer ul.socials li a{
+    text-decoration: none;
+}
+
+footer#footer ul.socials li a i{
+    font-size: 18px;
+}
+
+footer#footer .wrapper ul li{
+    float:none;
+    margin-bottom: 5px;
+}
+
+footer#footer .wrapper ul li a{
+    text-decoration: none;
+    color: #606060;
+}
+
+footer#footer .container .wrapper:last-child li:nth-of-type(2){
+    margin: 1.5rem 0;
+}
+/* end footer styles */

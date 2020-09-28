@@ -1,0 +1,25 @@
+:root{
+    --primaryColor: #01abe9;
+    --secondaryColor: #2e3675;
+    --accentColor: #2b44ff;
+}
+
+@font-face {
+    font-family: 'Mt Bold';
+    src:url('../assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Mt Semi';
+    src:url('../assets/fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src:url('../assets/fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:url('../assets/fonts/poppins/Poppins-Regular.ttf');
+}

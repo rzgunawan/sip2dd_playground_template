@@ -1,0 +1,169 @@
+body{
+    font-size: 16px;
+}
+
+section{
+    padding-top: 3rem;
+}
+
+.header span{
+    font-size: 18px
+}
+
+.section-header{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 16px;
+}
+
+.card .card-body .card-title{
+    font-size: 18px;
+}
+
+/* navbar styles */
+nav#navbar ul.nav-ul{
+    display:none;
+}
+
+nav#navbar .brand{
+    font-size: 38px
+}
+
+nav#navbar .container .collapse{
+    display:block;
+}
+/* end navbar styles */
+
+/* header styles */
+header#header{
+    padding-top: 1rem;
+}
+header#header .container .left__side, header#header .container .right__side{
+    flex:100%;
+}
+
+header#header .container .right__side{
+    order:0;
+    margin-bottom: 2rem;
+}
+
+header#header .container .right__side img.img-header{
+    width:60%;
+    height: 250px;
+}
+
+header#header .container .left__side{
+    order: 1;
+    text-align:center
+}
+
+header#header .container .left__side span, header#header .container .left__side h1.header-title{
+    font-size: 25px;
+}
+
+header#header .container .left__side p.header-description{
+    font-size: 18px;
+    margin-top: -.5rem;
+}
+
+header#header .container .left__side button{
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: -1rem;
+}
+/* end header styles */
+
+/* features section */
+section#features{
+    margin-top: 0;
+}
+
+section#features .header{
+    margin-bottom: -3rem;
+}
+
+section#features .content .card:not(:nth-of-type(4)){
+    margin-bottom: -4.5rem;
+}
+
+section#features .content .card .card-body .card-title{
+    font-size: 16px;
+}
+
+section#uk .container .content .card .img-wrapper{
+    height:150px;
+    width:90%;
+}
+
+section#uk .container .content .card .img-wrapper img{
+    width: 80px;
+    height:80px;
+}
+/* end features section */
+
+/* news styles */
+section#news .container .content .wrapper{
+    grid-gap: 0;
+}
+section#news .container .content .card img{
+    width:100%;
+    height: 160px;
+}
+
+section#news .container .content .card p{
+    margin: 1.2rem 0
+}
+/* end news styles */
+
+/* section interests styles */
+section#interest .container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section#interest .container .left__side{
+    order:1;
+    flex:100%;
+    text-align:center
+}
+
+section#interest .container .left__side p{
+    margin-top: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+section#interest .container .right__side{
+    order:0;
+    flex:100%;
+}
+
+section#interest .container .left__side .btn-wrapper{
+    margin:0 auto;
+}
+
+footer{
+    padding-top: 22rem;
+    background-color: #fff
+}
+
+footer#footer .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 15px;
+    justify-content:center;
+    align-items:start;
+}
+
+footer#footer .container .wrapper .header{
+    text-align: center !important;
+}
+
+footer#footer .container .wrapper h2{
+    text-align: center;
+}
+
+/* end section interests styles */
